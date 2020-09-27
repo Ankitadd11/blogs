@@ -1,0 +1,216 @@
+{
+	"info": {
+		"_postman_id": "c14e17f4-aee2-4d0c-b50e-416e198c8829",
+		"name": "blog_demo_client",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:4100/editArticle",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "Title",
+							"value": "Article 22",
+							"type": "text"
+						},
+						{
+							"key": "SubTitle",
+							"value": "this is first ",
+							"type": "text"
+						},
+						{
+							"key": "Description",
+							"value": "I am working on it first second",
+							"type": "text"
+						},
+						{
+							"key": "Slug",
+							"value": "article-22",
+							"type": "text"
+						},
+						{
+							"key": "AuthorID",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "FeatureImage",
+							"value": "base64:data",
+							"type": "text"
+						},
+						{
+							"key": "isPublish",
+							"value": "false",
+							"type": "text"
+						},
+						{
+							"key": "ID",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:4100/editArticle",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4100",
+					"path": [
+						"editArticle"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4100/addArticle",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "Title",
+							"value": "Article 22",
+							"type": "text"
+						},
+						{
+							"key": "SubTitle",
+							"value": "this is first ",
+							"type": "text"
+						},
+						{
+							"key": "Description",
+							"value": "I am working on it first second",
+							"type": "text"
+						},
+						{
+							"key": "Slug",
+							"value": "article-22",
+							"type": "text"
+						},
+						{
+							"key": "AuthorID",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "FeatureImage",
+							"value": "base64:data",
+							"type": "text"
+						},
+						{
+							"key": "isPublish",
+							"value": "false",
+							"type": "text"
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:4100/addArticle",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4100",
+					"path": [
+						"addArticle"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4100/deleteArticle",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "ID",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:4100/deleteArticle",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4100",
+					"path": [
+						"deleteArticle"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4100/fetchArticleByID",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "ID",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:4100/fetchArticleByID",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4100",
+					"path": [
+						"fetchArticleByID"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4100/fetchAllArticles",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4100/fetchAllArticles",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4100",
+					"path": [
+						"fetchAllArticles"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
